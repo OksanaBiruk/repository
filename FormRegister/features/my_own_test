@@ -1,0 +1,24 @@
+Feature: Register on Redmine
+  Background: open application under test
+    Given I am on the Front Page
+    When I click on "Register" link
+Scenario Outline: Valid and not valid registration
+  And I fill up "user_login" text field with <user_login>
+  And I fill up "user_password" text field with <password>
+  And I fill up "user_password_confirmation" text field with <confirmation_password>
+  And I fill up "user_firstname" text field with <user_first_name>
+  And I fill up "user_lastname" text field with <user_last_name>
+  And I fill up "user_mail" text field with <user_mail>
+  And I click on "commit" button
+  Then Warning <Message> is appeared
+Examples:
+|user_login| password |confirmation_password|user_first_name|user_last_name|user_mail|Message|
+|          |qwerty    |qwerty               |firstname      |lastname      |user@test.ru|Login can't be blank|
+|userlogin |qwerty    |                     |firstname      |lastname      |user@test.ru|Password doesn't match confirmation|
+|userlogin |          |qwerty               |firstname      |lastname      |user@test.ru|Password is too short (minimum is 4 characters)|
+|userlogin |qwerty    |qwerty               |               |lastname      |user@test.ru|First name can't be blank                      |
+|userlogin |qwerty    |qwerty               |firstname      |              |user@test.ru|Last name can't be blank                       |
+|userlogin |qwerty    |qwerty               |firstname      |lastname      |            |Email can't be blank                           |
+
+
+
