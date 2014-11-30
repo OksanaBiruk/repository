@@ -3,7 +3,7 @@ require 'rspec'
 
 browser = Selenium::WebDriver.for :firefox
 
-Given(/^I am on the Front Page$/) do
+Given (/^I am on the Front Page$/) do
   browser.get 'http://demo.redmine.org'
 end
 
@@ -21,5 +21,6 @@ And(/^I click on "([^"]*)" button$/) do |button_name|
 end
 
 Then(/^Warning (.*) is appeared$/) do |message|
+  browser.manage.timeouts.implicit_wait = 10
   expect(browser.find_element(id:'errorExplanation').text).to include message
 end

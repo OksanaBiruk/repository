@@ -1,4 +1,5 @@
 Feature: Register on Redmine
+
   Background: open application under test
     Given I am on the Front Page
     When I click on "Register" link
@@ -19,6 +20,11 @@ Examples:
 |userlogin |qwerty    |qwerty               |               |lastname      |user@test.ru|First name can't be blank                      |
 |userlogin |qwerty    |qwerty               |firstname      |              |user@test.ru|Last name can't be blank                       |
 |userlogin |qwerty    |qwerty               |firstname      |lastname      |            |Email can't be blank                           |
+|userlogin5 |qwerty    |qwerty               |firstname      |lastname      |user        |Email is invalid                               |
+|userlogin5 |123       |123                  |firstname      |lastname      |user@test.ru|Password is too short (minimum is 4 characters)|
+|test      |qwerty    |qwerty               |firstname      |lastname      |user@test.ru|Login has already been taken                   |
+|jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj|qwerty|qwerty|firstname      |lastname      |user@test.ru|Login is too long (maximum is 60 characters)|
+|userlogin5 |////                                                                |////  |firstname      |lastname      |user@test.ru|Invalid form authenticity token.|
 
 
 
