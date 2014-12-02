@@ -572,8 +572,8 @@ jQuery.cookie = function(name, value, options) {
 <body>
 <div id="container">
 <div id="header">
-<div class="time">17.42 s</div>
-<h1>my_own_test: untitled1: <strong><span class="total">60 total, </span><span class="failed">1 failed, </span><span class="passed">59 passed</span></strong>
+<div class="time">56.10 s</div>
+<h1>my_own_test: untitled1: <strong><span class="total">99 total, </span><span class="failed">2 failed, </span><span class="ignored">7 ignored, </span><span class="passed">90 passed</span></strong>
 </h1>
 <div id="treecontrol">
 <ul>
@@ -591,363 +591,633 @@ jQuery.cookie = function(name, value, options) {
 <ul id="tree">
 <li xmlns="" class="level top failed open">
 <span><em class="time">
-<div class="time">17.42 s</div>
+<div class="time">56.10 s</div>
 </em>Feature: Register on Redmine</span>
 <ul>
 <li class="level suite failed open">
 <span><em class="time">
-<div class="time">17.42 s</div>
-</em>Scenario Outline: Valid and not valid registration</span>
+<div class="time">56.10 s</div>
+</em>Scenario Outline: Not valid registration</span>
 <ul>
 <li class="level suite failed open">
 <span><em class="time">
-<div class="time">17.42 s</div>
+<div class="time">56.10 s</div>
 </em>Examples: </span>
 <ul>
 <li class="level suite open">
 <span><em class="time">
-<div class="time">3.18 s</div>
+<div class="time">6.05 s</div>
 </em>Scenario: Line: 17</span>
 <ul>
 <li class="level test">
 <span><em class="time">
 <div class="time">0 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">0 ms</div>
 </em><em class="status">passed</em>When  I click on "Register" link</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">525 ms</div>
+<div class="time">1.85 s</div>
 </em><em class="status">passed</em>And  I fill up "user_login" text field with </span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">166 ms</div>
+<div class="time">303 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">149 ms</div>
+<div class="time">251 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">160 ms</div>
+<div class="time">366 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">1.12 s</div>
+<div class="time">1.35 s</div>
 </em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">316 ms</div>
+<div class="time">421 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">258 ms</div>
+<div class="time">497 ms</div>
 </em><em class="status">passed</em>And  I click on "commit" button</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">489 ms</div>
+<div class="time">1.01 s</div>
 </em><em class="status">passed</em>Then  Warning Login can't be blank is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite open">
+<span><em class="time">
+<div class="time">4.97 s</div>
+</em>Scenario: Line: 18</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">435 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.11 s</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.15 s</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">198 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with </span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">308 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">276 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">432 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">367 ms</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">699 ms</div>
+</em><em class="status">passed</em>Then  Warning Password doesn't match confirmation is appeared</span>
 </li>
 </ul>
 </li>
 <li class="level suite failed open">
 <span><em class="time">
-<div class="time">2.64 s</div>
-</em>Scenario: Line: 18</span>
-<ul>
-<li class="level test">
-<span><em class="time">
-<div class="time">289 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">308 ms</div>
-</em><em class="status">passed</em>When  I click on "Register" link</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">417 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">161 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">132 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with </span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">157 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">162 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">301 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">368 ms</div>
-</em><em class="status">passed</em>And  I click on "commit" button</span>
-</li>
-<li class="level test failed open">
-<span><em class="time">
-<div class="time">342 ms</div>
-</em><em class="status">failed</em>Then  Warning Password doesn't match confirmation is appeared</span>
-<ul>
-<li class="text">
-<span class="stderr">Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;errorExplanation&quot;}<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141130-7632-179v15o/extensions/fxdriver@googlecode.com/components/driver-component.js:9673:in `FirefoxDriver.prototype.findElementInternal_&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141130-7632-179v15o/extensions/fxdriver@googlecode.com/components/driver-component.js:9682:in `FirefoxDriver.prototype.findElement&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141130-7632-179v15o/extensions/fxdriver@googlecode.com/components/command-processor.js:11667:in `DelayedCommand.prototype.executeInternal_/h&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141130-7632-179v15o/extensions/fxdriver@googlecode.com/components/command-processor.js:11672:in `DelayedCommand.prototype.executeInternal_&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141130-7632-179v15o/extensions/fxdriver@googlecode.com/components/command-processor.js:11614:in `DelayedCommand.prototype.execute/&lt;&#39;<br/>./features/step_definitions/steps.rb:24:in `/^Warning (.*) is appeared$/&#39;<br/>D:\Git\FormRegister\features\my_own_test:14:in `Then Warning &lt;Message&gt; is appeared&#39;<br/></span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="level suite open">
-<span><em class="time">
-<div class="time">4.16 s</div>
+<div class="time">1.68 s</div>
 </em>Scenario: Line: 19</span>
 <ul>
 <li class="level test">
 <span><em class="time">
-<div class="time">359 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">773 ms</div>
+<div class="time">624 ms</div>
 </em><em class="status">passed</em>When  I click on "Register" link</span>
 </li>
-<li class="level test">
+<li class="level test failed open">
 <span><em class="time">
-<div class="time">657 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
+<div class="time">1.05 s</div>
+</em><em class="status">failed</em>And  I fill up "user_login" text field with userlogin</span>
+<ul>
+<li class="text">
+<span class="stderr">Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user_login&quot;}<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141202-5732-12idc2h/extensions/fxdriver@googlecode.com/components/driver-component.js:9673:in `FirefoxDriver.prototype.findElementInternal_&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141202-5732-12idc2h/extensions/fxdriver@googlecode.com/components/driver-component.js:9682:in `FirefoxDriver.prototype.findElement&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141202-5732-12idc2h/extensions/fxdriver@googlecode.com/components/command-processor.js:11667:in `DelayedCommand.prototype.executeInternal_/h&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141202-5732-12idc2h/extensions/fxdriver@googlecode.com/components/command-processor.js:11672:in `DelayedCommand.prototype.executeInternal_&#39;<br/>[remote server] file:///C:/Users/Oksana/AppData/Local/Temp/webdriver-profile20141202-5732-12idc2h/extensions/fxdriver@googlecode.com/components/command-processor.js:11614:in `DelayedCommand.prototype.execute/&lt;&#39;<br/>./features/step_definitions/steps.rb:15:in `/^I fill up &quot;([^&quot;]*)&quot; text field with (.*)$/&#39;<br/>D:\Git\FormRegister\features\my_own_test:7:in `And I fill up &quot;user_login&quot; text field with &lt;user_login&gt;&#39;<br/></span>
 </li>
-<li class="level test">
-<span><em class="time">
-<div class="time">128 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_password" text field with </span>
+</ul>
 </li>
-<li class="level test">
+<li class="level test ignored open">
 <span><em class="time">
-<div class="time">159 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
+<div class="time">1 ms</div>
+</em><em class="status">ignored</em>And  I fill up "user_password" text field with </span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
 </li>
-<li class="level test">
-<span><em class="time">
-<div class="time">165 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</ul>
 </li>
-<li class="level test">
+<li class="level test ignored open">
 <span><em class="time">
-<div class="time">160 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+<div class="time">1 ms</div>
+</em><em class="status">ignored</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
 </li>
-<li class="level test">
-<span><em class="time">
-<div class="time">289 ms</div>
-</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</ul>
 </li>
-<li class="level test">
+<li class="level test ignored open">
 <span><em class="time">
-<div class="time">252 ms</div>
-</em><em class="status">passed</em>And  I click on "commit" button</span>
+<div class="time">0 ms</div>
+</em><em class="status">ignored</em>And  I fill up "user_firstname" text field with firstname</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
 </li>
-<li class="level test">
+</ul>
+</li>
+<li class="level test ignored open">
 <span><em class="time">
-<div class="time">1.22 s</div>
-</em><em class="status">passed</em>Then  Warning Password is too short (minimum is 4 characters) is appeared</span>
+<div class="time">0 ms</div>
+</em><em class="status">ignored</em>And  I fill up "user_lastname" text field with lastname</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
+</li>
+</ul>
+</li>
+<li class="level test ignored open">
+<span><em class="time">
+<div class="time">1 ms</div>
+</em><em class="status">ignored</em>And  I fill up "user_mail" text field with user@test.ru</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
+</li>
+</ul>
+</li>
+<li class="level test ignored open">
+<span><em class="time">
+<div class="time">0 ms</div>
+</em><em class="status">ignored</em>And  I click on "commit" button</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
+</li>
+</ul>
+</li>
+<li class="level test ignored open">
+<span><em class="time">
+<div class="time">2 ms</div>
+</em><em class="status">ignored</em>Then  Warning Password is too short (minimum is 4 characters) is appeared</span>
+<ul>
+<li class="text">
+<span class="stdout">Skipped step<br/></span>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li class="level suite open">
 <span><em class="time">
-<div class="time">2.58 s</div>
+<div class="time">5.40 s</div>
 </em>Scenario: Line: 20</span>
 <ul>
 <li class="level test">
 <span><em class="time">
-<div class="time">386 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">323 ms</div>
+<div class="time">523 ms</div>
 </em><em class="status">passed</em>When  I click on "Register" link</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">399 ms</div>
+<div class="time">901 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">148 ms</div>
+<div class="time">1.50 s</div>
 </em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">138 ms</div>
+<div class="time">415 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">106 ms</div>
+<div class="time">254 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_firstname" text field with </span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">151 ms</div>
+<div class="time">314 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">270 ms</div>
+<div class="time">485 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">270 ms</div>
+<div class="time">350 ms</div>
 </em><em class="status">passed</em>And  I click on "commit" button</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">385 ms</div>
+<div class="time">654 ms</div>
 </em><em class="status">passed</em>Then  Warning First name can't be blank is appeared</span>
 </li>
 </ul>
 </li>
 <li class="level suite open">
 <span><em class="time">
-<div class="time">2.61 s</div>
+<div class="time">4.41 s</div>
 </em>Scenario: Line: 21</span>
 <ul>
 <li class="level test">
 <span><em class="time">
-<div class="time">396 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">288 ms</div>
+<div class="time">375 ms</div>
 </em><em class="status">passed</em>When  I click on "Register" link</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">418 ms</div>
+<div class="time">776 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">178 ms</div>
+<div class="time">192 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">140 ms</div>
+<div class="time">184 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">173 ms</div>
+<div class="time">243 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">110 ms</div>
+<div class="time">162 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_lastname" text field with </span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">279 ms</div>
+<div class="time">326 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">292 ms</div>
+<div class="time">1.05 s</div>
 </em><em class="status">passed</em>And  I click on "commit" button</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">332 ms</div>
+<div class="time">1.10 s</div>
 </em><em class="status">passed</em>Then  Warning Last name can't be blank is appeared</span>
 </li>
 </ul>
 </li>
 <li class="level suite open">
 <span><em class="time">
-<div class="time">2.26 s</div>
+<div class="time">5.38 s</div>
 </em>Scenario: Line: 22</span>
 <ul>
 <li class="level test">
 <span><em class="time">
-<div class="time">325 ms</div>
-</em><em class="status">passed</em>Given  I am on the Front Page</span>
-</li>
-<li class="level test">
-<span><em class="time">
-<div class="time">290 ms</div>
+<div class="time">403 ms</div>
 </em><em class="status">passed</em>When  I click on "Register" link</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">407 ms</div>
+<div class="time">773 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">141 ms</div>
+<div class="time">1.32 s</div>
 </em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">139 ms</div>
+<div class="time">250 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">157 ms</div>
+<div class="time">284 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">149 ms</div>
+<div class="time">296 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">110 ms</div>
+<div class="time">215 ms</div>
 </em><em class="status">passed</em>And  I fill up "user_mail" text field with </span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">244 ms</div>
+<div class="time">622 ms</div>
 </em><em class="status">passed</em>And  I click on "commit" button</span>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">297 ms</div>
+<div class="time">1.22 s</div>
 </em><em class="status">passed</em>Then  Warning Email can't be blank is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite open">
+<span><em class="time">
+<div class="time">7.70 s</div>
+</em>Scenario: Line: 23</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">439 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">2.65 s</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin5</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.98 s</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">322 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">316 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">245 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">218 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">349 ms</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.18 s</div>
+</em><em class="status">passed</em>Then  Warning Email is invalid is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite open">
+<span><em class="time">
+<div class="time">5.98 s</div>
+</em>Scenario: Line: 24</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">566 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.56 s</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin5</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.01 s</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with 123</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">255 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with 123</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">411 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">456 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">439 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">426 ms</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">862 ms</div>
+</em><em class="status">passed</em>Then  Warning Password is too short (minimum is 4 characters) is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite open">
+<span><em class="time">
+<div class="time">4.61 s</div>
+</em>Scenario: Line: 25</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">384 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">724 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with test</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.04 s</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">304 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">330 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">253 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">393 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">551 ms</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">625 ms</div>
+</em><em class="status">passed</em>Then  Warning Login has already been taken is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite open">
+<span><em class="time">
+<div class="time">5.34 s</div>
+</em>Scenario: Line: 26</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">546 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.26 s</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.01 s</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">446 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with qwerty</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">368 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">262 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">368 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">385 ms</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">698 ms</div>
+</em><em class="status">passed</em>Then  Warning Login is too long (maximum is 60 characters) is appeared</span>
+</li>
+</ul>
+</li>
+<li class="level suite failed open">
+<span><em class="time">
+<div class="time">4.59 s</div>
+</em>Scenario: Line: 27</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">465 ms</div>
+</em><em class="status">passed</em>When  I click on "Register" link</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.04 s</div>
+</em><em class="status">passed</em>And  I fill up "user_login" text field with userlogin5</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">206 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password" text field with ////</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">215 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_password_confirmation" text field with ////</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">237 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_firstname" text field with firstname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">223 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_lastname" text field with lastname</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">359 ms</div>
+</em><em class="status">passed</em>And  I fill up "user_mail" text field with user@test.ru</span>
+</li>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.08 s</div>
+</em><em class="status">passed</em>And  I click on "commit" button</span>
+</li>
+<li class="level test failed open">
+<span><em class="time">
+<div class="time">762 ms</div>
+</em><em class="status">failed</em>Then  Warning Invalid form authenticity token. is appeared</span>
+<ul>
+<li class="text">
+<span class="stderr">RSpec::Expectations::ExpectationNotMetError: expected &quot;Email has already been taken&quot; to include &quot;Invalid form authenticity token.&quot;<br/>./features/step_definitions/steps.rb:25:in `/^Warning (.*) is appeared$/&#39;<br/>D:\Git\FormRegister\features\my_own_test:14:in `Then Warning &lt;Message&gt; is appeared&#39;<br/></span>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -961,7 +1231,7 @@ jQuery.cookie = function(name, value, options) {
 </div>
 </div>
 <div id="footer">
-<p>Generated by RubyMine on 30.11.14 15:34</p>
+<p>Generated by RubyMine on 02.12.14 13:12</p>
 </div>
 </body>
 </html>

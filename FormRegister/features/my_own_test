@@ -1,9 +1,9 @@
 Feature: Register on Redmine
 
   Background: open application under test
-    Given I am on the Front Page
+#    Given I am on the Front Page
     When I click on "Register" link
-Scenario Outline: Valid and not valid registration
+Scenario Outline:  Not valid registration
   And I fill up "user_login" text field with <user_login>
   And I fill up "user_password" text field with <password>
   And I fill up "user_password_confirmation" text field with <confirmation_password>
